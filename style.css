@@ -17,14 +17,14 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 /* -------------------------------------------------- */
-header {
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 100px;
+  padding: 50px 130px;
   background-color: hsl(193, 100%, 96%);
 }
-header button {
+nav button {
   background-color: #fff;
   box-shadow: 5px 5px 5px 5px rgba(215, 211, 211, 0.3);
   padding: 8px 0;
@@ -33,13 +33,13 @@ header button {
   border: none;
   font-weight: 500;
 }
-header button:hover {
+nav button:hover {
   cursor: pointer;
   background-color: hsla(322, 100%, 66%, 0.5);
   color: #fff;
 }
-header img {
-  max-width: 150px;
+nav img {
+  max-width: 180px;
 }
 /* --------------------------Main ------------------------ */
 #main__container {
@@ -53,6 +53,7 @@ header img {
 .para-colors {
   color: hsl(208, 11%, 55%);
   padding-top: 12px;
+  font-size: 12px;
 }
 /* --------------------------Build the Community ------------------------ */
 .build__community {
@@ -118,12 +119,14 @@ h2 {
 .flowing__conversation img,
 .your__users img {
   max-width: 400px;
+  padding: 30px;
 }
 
 .sub__grow__together,
 .sub__flowing__conversation,
 .sub__your__users {
   max-width: 400px;
+  padding: 30px;
 }
 
 figure {
@@ -148,6 +151,11 @@ figure button:hover {
   font-family: "Poppins", sans-serif;
 }
 /* --------------------------Footer ------------------------ */
+#huddle-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 footer {
   font-size: 10px;
   background-color: hsl(192, 100%, 9%);
@@ -155,6 +163,7 @@ footer {
   padding: 9rem;
   padding-bottom: 4rem;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 .huddle-section {
@@ -205,8 +214,9 @@ ul li {
 }
 
 .attribution {
-  font-size: 14px;
+  font-size: 11px;
   text-align: center;
+  margin-top: 60px;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
@@ -215,7 +225,7 @@ ul li {
 /* --------------------------Media Query ------------------------ */
 
 @media screen and (max-width: 600px) {
-  header {
+  nav {
     display: flex;
     justify-content: space-between;
     gap: 18px;
@@ -267,19 +277,23 @@ ul li {
     padding: 8px;
     margin: 6px;
   }
-  footer {
+  #huddle-section {
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
     align-items: center;
-    padding-left: 20px;
+    margin-left: -100px;
   }
   .copyright {
-    height: 60px;
+    height: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     text-align: center;
+  }
+  .attribution {
+    margin-top: 20px;
+    font-size: 6px;
   }
 }

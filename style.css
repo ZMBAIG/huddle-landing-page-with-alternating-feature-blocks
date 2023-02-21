@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap");
+
+/* --------------------------------Color Scheme------------------------------------------ */
+/* ### Primary
+- Pink: hsl(322, 100%, 66%)
+### Neutral
+- Very Pale Cyan: hsl(193, 100%, 96%)
+- Very Dark Cyan: hsl(192, 100%, 9%)
+- Grayish Blue: hsl(208, 11%, 55%) */
+/* -------------------------------------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+/* -------------------------------------------------- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 100px;
+  background-color: hsl(193, 100%, 96%);
+}
+header button {
+  background-color: #fff;
+  box-shadow: 5px 5px 5px 5px rgba(215, 211, 211, 0.3);
+  padding: 8px 0;
+  width: 150px;
+  border-radius: 25px;
+  border: none;
+  font-weight: 500;
+}
+header button:hover {
+  cursor: pointer;
+  background-color: hsla(322, 100%, 66%, 0.5);
+  color: #fff;
+}
+header img {
+  max-width: 150px;
+}
+/* --------------------------Main ------------------------ */
+#main__container {
+  display: grid;
+  grid-template-columns: 900px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 8px;
+}
+.para-colors {
+  color: hsl(208, 11%, 55%);
+  padding-top: 12px;
+}
+/* --------------------------Build the Community ------------------------ */
+.build__community {
+  background-image: url(./images/bg-hero-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 0;
+  background-color: hsl(193, 100%, 96%);
+  margin-bottom: 4rem;
+}
+
+.build__community article {
+  padding: 30px;
+  max-width: 400px;
+}
+.build__community button,
+figure button {
+  background-color: hsl(322, 100%, 66%);
+  color: white;
+  padding: 16px 0;
+  margin: 20px 0;
+  width: 250px;
+  border-radius: 25px;
+  border: none;
+}
+.build__community button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+
+h2 {
+  margin-bottom: 18px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+
+/* --------------------------Grow Together ------------------------ */
+
+.grow__together,
+.flowing__conversation,
+.your__users {
+  padding: 30px;
+  border-radius: 12px;
+  margin-top: 0.75rem;
+  box-shadow: 2px 2px 2px rgba(215, 211, 211, 0.3);
+  border: 0.75px solid rgb(214, 214, 214);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+.build__community img,
+.illustration-grow img,
+.flowing__conversation img,
+.your__users img {
+  max-width: 400px;
+}
+
+.sub__grow__together,
+.sub__flowing__conversation,
+.sub__your__users {
+  max-width: 400px;
+}
+
+figure {
+  padding: 20px 40px;
+  background-color: #fff;
+  max-width: 50%;
+  display: grid;
+  justify-content: center;
+  border-radius: 12px;
+  position: relative;
+  bottom: -150px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+figure button:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+.ready-to-build {
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+/* --------------------------Footer ------------------------ */
+footer {
+  font-size: 10px;
+  background-color: hsl(192, 100%, 9%);
+  color: white;
+  padding: 9rem;
+  padding-bottom: 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+.huddle-section {
+  max-width: 300px;
+}
+.huddle-section img {
+  max-width: 150px;
+  padding-bottom: 15px;
+}
+
+.lorem,
+.phone-info,
+.email-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.phone-info img,
+.email-info img {
+  width: 16px;
+  margin-top: 6px;
+}
+.about-us p {
+  padding: 8px 0;
+}
+.career-blog p {
+  padding: 8px 0;
+}
+ul {
+  list-style: none;
+  display: flex;
+  gap: 18px;
+}
+ul li {
+  border-radius: 50%;
+  border: 1px solid #fff;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.copyright {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.attribution {
+  font-size: 14px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* --------------------------Media Query ------------------------ */
+
+@media screen and (max-width: 600px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+    padding: 16px;
+  }
+  #main__container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .build__community {
+    background-image: url(./images/bg-hero-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .grow__together {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .flowing__conversation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .your__users {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  figure {
+    font-size: 12px;
+    max-width: 300px;
+    position: relative;
+    bottom: -100px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  figure button {
+    width: 200px;
+    padding: 8px;
+    margin: 6px;
+  }
+  footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+  }
+  .copyright {
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+  }
+}
